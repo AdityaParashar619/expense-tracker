@@ -14,7 +14,6 @@ function ExpenseForm({ addExpense }) {
         const expense = { name, amount, category };
 
         addExpense(expense);
-
         //it resets form/ clears input fields
         setName("");
         setAmount("");
@@ -29,7 +28,6 @@ function ExpenseForm({ addExpense }) {
                 onChange={(e) => setName(e.target.value)}
                 required
             />
-
             <input
                 type="number"
                 placeholder="Amount"
@@ -37,19 +35,14 @@ function ExpenseForm({ addExpense }) {
                 onChange={(e) => setAmount(e.target.value)}
                 required
             />
-
             <select value={category} onChange={(e) => setCategory(e.target.value)}>
-
                 <option>Food</option>
                 <option>Travel</option>
                 <option>Utilities</option>
                 <option>Marketing</option>
                 <option>Other</option>
-
             </select>
-
             <button>Add Expense</button>
-
         </form>
     );
 }
