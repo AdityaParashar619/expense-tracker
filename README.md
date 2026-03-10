@@ -19,6 +19,10 @@ JavaScript
 CSS  
 Frankfurter API  
 
+## Live Demo
+
+https://expense-tracker-6kra.vercel.app/
+
 ## GitHub Repo
 
 https://github.com/AdityaParashar619/expense-tracker.git
