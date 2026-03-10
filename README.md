@@ -1,3 +1,4 @@
+
 # Expense Tracker React App
 
 A simple expense tracker built with React.
@@ -16,12 +17,9 @@ A simple expense tracker built with React.
 React  
 JavaScript  
 CSS  
-Frankfurter API
-
-## Live Demo
-
-[Add Vercel Link]
+Frankfurter API  
 
 ## GitHub Repo
 
 https://github.com/AdityaParashar619/expense-tracker.git
+
