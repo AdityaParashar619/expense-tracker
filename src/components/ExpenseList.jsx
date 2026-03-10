@@ -1,5 +1,14 @@
 function ExpenseList({ expenses, deleteExpense }) {
 
+    if (expenses.length === 0) {
+        return (
+            <div className="card">
+                <h3>Recent Expenses</h3>
+                <p>No expenses added yet</p>
+            </div>
+        );
+    }
+
     return (
 
         <div className="expenses">

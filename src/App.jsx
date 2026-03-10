@@ -1,5 +1,5 @@
 //import all things
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ExpenseForm from "./components/ExpenseForm";
 import ExpenseList from "./components/ExpenseList";
 import SummaryPanel from "./components/SummaryPanel";
@@ -9,7 +9,13 @@ import "./App.css";
 function App() {
 
     //stores all expenses and update our expense array
-    const [expenses, setExpenses] = useState([]);
+    const [expenses, setExpenses] = useState(() => {
+        const saved = localStorage.getItem("expenses");
+        return saved ? JSON.parse(saved) : [];
+    });
+    useEffect(() => {
+        localStorage.setItem("expenses", JSON.stringify(expenses));
+    }, [expenses]);
 
     //to add new expenses
     const addExpense = (expense) => {
